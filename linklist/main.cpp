@@ -1,6 +1,5 @@
 #include<iostream>
 #include "llist.h"
-
 int main()
 {
 	llist test;

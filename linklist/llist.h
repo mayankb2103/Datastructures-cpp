@@ -1,5 +1,6 @@
 #ifndef ARRAY_LIST_H
 #define ARRAY_LIST_H
+using namespace std;
 struct Node
 {
 	int data;
@@ -14,9 +15,11 @@ class llist
 {
 
 	private:
+
 		Node* end;
 		int length;
 	public:
+
 		Node* head;
 		llist();	
 		int size();
