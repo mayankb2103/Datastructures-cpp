@@ -1,5 +1,5 @@
-#include<iostream>
-using namespace std;
+#ifndef ARRAY_LIST_H
+#define ARRAY_LIST_H
 struct Node
 {
 	int data;
@@ -30,3 +30,4 @@ class llist
 		void reverserec(Node* head);
 		void reverselist();
 };
+#endif
