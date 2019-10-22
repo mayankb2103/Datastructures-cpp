@@ -8,3 +8,6 @@ This Contains Abstract data type list with the help of array. Where u can insert
 
 #### linklist
 This Contains implementation of singly linkedlist with Pointers. You can insert at begining, end at nth position, Delete at nth position, Reverse a list(both iterative and recursive) and only Print list in reverse order(Recursive)
+
+#### doublelinklist
+This Contains implementation of Doubly linkedlist with Pointers. You can insert at end, and at nth position, Delete at nth position, Reverse a list(recursive) and Print list in forward and reverse order.
