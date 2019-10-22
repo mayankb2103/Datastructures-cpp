@@ -74,15 +74,43 @@ void dll::insertn(int n, int data)
 }
 void dll::deleten(int n)
 {
+	Node* temphead=head;
+	for(int i=1;i<n-1;i++)
+	{
+		temphead=temphead->next;
+	}
+	Node* tempnext=temphead->next->next;
+	temphead->next=tempnext;
+	tempnext->prev=temphead;
+	length--;
 }
-void dll::deletedata(int data)
+void dll::reverselist(Node* hed)
 {
+	if(hed->next==NULL)
+	{
+		hed->next=hed->prev;
+		hed->prev=NULL;
+		tail=head;
+		head=hed;
+		return;
+		
+	}
+	Node* temp=hed->next;
+	hed->next=hed->prev;
+	hed->prev=temp;
+	reverselist(temp);
 }
-void dll::reverselist(Node* head)
+void dll::reverseprint(Node* hed)
 {
-}
-void dll::reverseprint(Node* head)
-{
+	if(hed==NULL)
+	{
+		cout << endl;
+		return;
+	}
+	cout << hed->data << " ";
+	reverseprint(hed->prev);
+	
+
 }
 void dll::printlist()
 {

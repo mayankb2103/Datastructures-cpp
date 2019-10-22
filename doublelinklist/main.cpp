@@ -39,6 +39,13 @@ int main()
 	cout << test.length << endl;
 	test.insertn(22,100);
 	test.printlist();
+	cout << "==================" << endl;
 
-	
+
+	test.deleten(12);
+	test.printlist();
+	test.reverselist(test.head);
+	test.printlist();	
+	cout << "===" << endl;
+	test.reverseprint(test.tail);
 }

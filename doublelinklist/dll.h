@@ -26,7 +26,6 @@ class dll
 		void insert(int data);
 		void insertn(int n, int data);
 		void deleten(int n);
-		void deletedata(int data);
 		void reverselist(Node* head);
 		void reverseprint(Node* head);
 		void printlist();
